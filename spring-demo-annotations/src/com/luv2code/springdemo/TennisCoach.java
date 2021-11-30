@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
+//@Scope("prototype")
 public class TennisCoach implements Coach, DisposableBean {
 	
 	@Autowired
@@ -18,17 +18,21 @@ public class TennisCoach implements Coach, DisposableBean {
     private FortuneService  fortuneService;
 
 //  Constructor Injection  
-//	@Autowired	
-//	public TennisCoach(FortuneService fortuneService) {
+//	@Autowired
+//	public TennisCoach(@Qualifier("happyFortuneService") FortuneService fortuneService) {
 //		this.fortuneService = fortuneService;
 //	}
+    
+    
 
 //  Setter/Method Injection	
+//	@Autowired
+//	@Qualifier("randomFortuneService")
 //	public void setFortuneService(FortuneService fortuneService) {
 //		System.out.println("Inside tennis coach setter");
 //		this.fortuneService = fortuneService;
 //	}
-	
+//	
 	@Override
 	public String getDailyWorkout() {
 		return "Daily workout: tennis";

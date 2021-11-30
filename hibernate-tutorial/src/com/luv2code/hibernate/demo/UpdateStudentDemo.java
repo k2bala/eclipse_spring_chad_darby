@@ -15,7 +15,7 @@ public class UpdateStudentDemo {
 				.buildSessionFactory();
 
 		try {
-			int studentId = 1000;
+			int studentId = 1;
 			Session session = factory.getCurrentSession();
 			session.beginTransaction();
 			Student myStudent = session.get(Student.class, studentId);

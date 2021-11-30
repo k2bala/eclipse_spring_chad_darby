@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=web-customer-tracker/src&lt;com.luv2code.springdemo.dao{CustomerDAO.java[CustomerDAO" modifiers="513" timestamp="1637248270245"/>
+    <typeInfo handle="=web-customer-tracker/src&lt;com.luv2code.springdemo.service{CustomerService.java[CustomerService" modifiers="513" timestamp="1637248226952"/>
+    <typeInfo handle="=web-customer-tracker/C:\/Users\/bkendai\/OneDrive - NVIDIA Corporation\/my\/Study\/eclipse_spring_chad_darby\/web-customer-tracker\/WebContent\/WEB-INF\/lib\/spring-web-5.2.9.RELEASE.jar&lt;org.springframework.http.codec(CodecConfigurer$CustomCodecs.class[CustomCodecs" modifiers="1545" timestamp="1611551878000"/>
+</typeInfoHistroy>

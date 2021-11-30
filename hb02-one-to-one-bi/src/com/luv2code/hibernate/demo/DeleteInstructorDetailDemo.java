@@ -21,7 +21,7 @@ public class DeleteInstructorDetailDemo {
 		try {
 			//create and associate objects
 			session.beginTransaction();
-			InstructorDetail instructorDetail  = session.get(InstructorDetail.class, 3);
+			InstructorDetail instructorDetail  = session.get(InstructorDetail.class, 2);
 			System.out.println("Detail " + instructorDetail);
 			System.out.println("for instructor " + instructorDetail.getInstructor());
 			instructorDetail.getInstructor().setInstructorDetail(null);

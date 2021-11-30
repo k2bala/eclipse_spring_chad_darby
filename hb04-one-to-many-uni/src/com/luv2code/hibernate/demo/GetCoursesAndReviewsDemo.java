@@ -25,7 +25,7 @@ public class GetCoursesAndReviewsDemo {
 		try {
 			//create and associate objects
 			session.beginTransaction();
-			Course tempCourse =session.get(Course.class, 1);
+			Course tempCourse =session.get(Course.class, 10);
 			System.out.println("Course name: " + tempCourse);
 			System.out.println("Course reviews: " + tempCourse.getReviews());
 			session.getTransaction().commit();

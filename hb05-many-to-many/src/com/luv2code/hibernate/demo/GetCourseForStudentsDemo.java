@@ -27,7 +27,7 @@ public class GetCourseForStudentsDemo {
 		try {
 			//create and associate objects
 			session.beginTransaction();
-			Student tempStudent = session.get(Student.class, 2);
+			Student tempStudent = session.get(Student.class, 1);
 			System.out.println("Retrieved student: " + tempStudent);
 			System.out.println("\tCourse: " + tempStudent.getCourses());
 			session.getTransaction().commit();

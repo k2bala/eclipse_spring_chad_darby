@@ -27,7 +27,7 @@ public class DeleteCourseDemo {
 		try {
 			//create and associate objects
 			session.beginTransaction();
-			Course course = session.get(Course.class, 13);
+			Course course = session.get(Course.class, 10);
 			System.out.println("Retrieved course: " + course);
 			session.delete(course);
 			session.getTransaction().commit();

@@ -22,7 +22,7 @@ public class DeleteDemo {
 		try {
 			//create and associate objects
 			session.beginTransaction();
-			Instructor instructor  = session.get(Instructor.class, 2);
+			Instructor instructor  = session.get(Instructor.class, 1);
 			if (instructor != null) {
 			    session.delete(instructor);
 			}
