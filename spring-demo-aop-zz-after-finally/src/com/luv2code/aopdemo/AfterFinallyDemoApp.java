@@ -14,7 +14,7 @@ public class AfterFinallyDemoApp {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 		AccountDAO dao = context.getBean("accountDAO", AccountDAO.class);
 		List<Account> foundAccount = null;
-		boolean tripwire = false;
+		boolean tripwire = true;
 		try {
 			foundAccount = dao.findAccount(tripwire);
 		} catch(Exception e) {

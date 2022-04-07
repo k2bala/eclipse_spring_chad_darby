@@ -1,4 +1,5 @@
 .metadata
+.metadata_bak
 **/.metadata/**
 **/src/main/**/target/
 **/src/test/**/target/
