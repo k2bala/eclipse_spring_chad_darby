@@ -43,3 +43,91 @@ So as you can see, it depends on the context.
 In our training video, we are using @OneToMany uni-directional (course has one-to-many reviews).
 
 As a result, the join column / foreign key column is in the target entity. In this case, the target entity is the Review class. So, you will find the join column "course_id" in the "review" table.
+
+-----------------
+Spring Boot Reference Manual
+
+For full details on this process, see the Spring Boot Reference Manual: Section 92.1 Creating a Deployable WAR file
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-create-a-deployable-war-file
+------------------------------
+Spring Boot and Angular
+
+- https://github.com/dsyer/spring-boot-angular
+
+Spring MVC and File Upload
+
+- https://spring.io/guides/gs/uploading-files/
+
+Spring RESTful web services
+
+- https://spring.io/guides/gs/rest-service/
+
+Spring Security for Web Apps
+
+- https://spring.io/guides/gs/securing-web/
+
+Spring and Facebook
+
+- https://spring.io/guides/gs/accessing-facebook/
+
+Spring and Twitter
+
+- https://spring.io/guides/gs/accessing-twitter/
+
+--- Build a Basic CRUD App with Angular and Spring Boot
+
+https://developer.okta.com/blog/2017/12/04/basic-crud-angular-and-spring-boot
+
+=====
+
+FAQ: I would like to see examples of real-world projects that use Spring
+
+Answer:
+
+Here are some sample Spring projects you can look at.
+
+They are of moderate size complexity
+
+Project Sagan 
+
+This is a real-world app that powers the Spring.io website. It is in production and used by thousands of users each day.
+
+You can get information about the project and get source code here: - https://github.com/spring-io/sagan/wiki
+
+         ---
+
+Spring Petstore Example
+
+This is an example project for the classic PetClinic / PetStore example. https://github.com/spring-projects/spring-petclinic
+
+---
+
+E-Commerce Product - Broadleaf
+
+https://www.broadleafcommerce.com/
+
+The Broadleaf product is based on Spring and Hibernate. You can get details on their framework and source code at the link below
+
+https://www.broadleafcommerce.com/framework
+
+---
+
+OpenSource Projects Using Spring
+
+Access real-world projects that make use of Spring code - http://www.programcreek.com/2012/08/open-source-projects-that-use-spring-framework/
+
+---
+
+=====
+
+FAQ: How to Host my Java apps Online?
+
+---
+
+Here's a free guide that walks you through the steps:
+
+The Ultimate Guide to Hosting a Java Web App with Amazon Web Services (AWS) http://coderscampus.com/ultimate-guide-hosting-java-web-app-amazon-web-services-aws/
+
+
+
+

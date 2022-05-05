@@ -1,0 +1,117 @@
+1. How to use Spring Security with Custom Database Tables?
+
+2. How to select user roles using drop-down list?
+
+----
+
+Spring Security - User Registration Form with Custom Database Tables
+
+Question:
+
+I want to add registration module into spring security login demo application. How should I do this? I want to access registration page from Login page through hyperlink and after submit data into database.
+
+Answer
+
+I have a document that covers this. It performs user registration with custom user details with Spring Security using Hibernate. Custom user details include: user name, password, first name, last name and email. You can feel free to extend it with additional custom fields. Demo includes Hibernate, database support, encrypted passwords. The code uses Maven, all Java config (no xml) Hibernate configuration
+
+PDF
+
+http://www.luv2code.com/bonus-spring-security-user-registration-custom-user
+
+Source Code
+
+http://www.luv2code.com/spring-security-user-registration-custom-user-code
+
+---
+
+Spring Security  and Thymeleaf
+
+Question:
+
+How would we convert spring-security-user-registration-custom-user-code to use Thymeleaf instead of JSP?
+
+Answer
+
+Here is the source code for this:
+
+- Non-Spring Boot version: bonus-code-spring-security-user-registration-custom-user-details-thymeleaf.zip
+
+- Spring Boot version: bonus-code-spring-security-user-registration-custom-user-details-thymeleaf-spring-boot.zip
+
+
+Here are some rough notes on the Thymeleaf version:
+
+- For docs on Spring MVC and Thymeleaf integration, see this link
+
+- For docs on Spring Security and Thymeleaf integration, see this link
+
+A couple of high-level changes
+
+1. Add the Thymeleaf pom entries
+
+    <!-- Thymeleaf core support -->
+    <dependency>
+    	<groupId>org.thymeleaf</groupId>
+    	<artifactId>thymeleaf-spring5</artifactId>
+    	<version>3.0.11.RELEASE</version>
+    </dependency>
+     
+    <!-- Thymeleaf security support -->
+    <dependency>
+    	<groupId>org.thymeleaf.extras</groupId>
+    	<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+    	<version>3.0.4.RELEASE</version>
+    </dependency>
+
+
+2. Configure Thymeleaf engine and resolvers.
+
+See code example in: DemoAppConfig.java
+
+
+3. Create Thymeleaf views
+
+See code examples in: webapp/WEB-INF/views
+
+---
+
+Spring Security - Select User Roles using Drop-Down List
+
+Question
+
+In the Spring Security Registration example, what if I don't want to set Role default as Employee? Instead I want to take roles from user through registration page using dropdown list.  Then I want to store role data in role table and user data in user table. How can I achieve this?
+
+Answer
+
+I have a solution that covers this scenario. This includes PDF description and source code.
+
+PDF
+
+http://www.luv2code.com/spring-security-multi-role-pdf
+
+Source Code
+
+http://www.luv2code.com/spring-security-multi-role
+
+Bonus Lecture: Adding Spring Security to CRM App
+
+Download at the link below
+
+http://www.luv2code.com/bonus-spring-crm-with-security
+
+
+
+
+You can add a public view page and set up the security constraints to allow access to the view page. In this example, we have a view page that anyone can access. then they can click the link to access the secure pages.
+
+Here is the solution code for the project:
+https://drive.google.com/open?id=1--Q8XnmjD9SLNze_Hk1JlK-nSIISi2YK
+
+
+This project has the following modifications.
+
+1. Updated security configs to allow public access to landing page
+
+2. Updated controller to send requests to landing page
+
+3. New landing page
